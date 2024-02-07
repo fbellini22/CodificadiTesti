@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd"> <!-- document type declaration-->
+<TEI>
+    <teiHeader>
+        <fileDesc>
+            <titleStmt> <!-- info titolo documento digitale-->
+                <title>Versione elettronica degli scritti autografi di <name ref="#EA">Emanuele Artom</name></title>
+                <author ref="#EA">Emanuele Artom</author>
+            </titleStmt>
+            <editionStmt>
+                <edition>Progetto svolto dagli studenti di informatica umanistica dell'università di Pisa per il corso di Codifica di testi sulla raccolta degli scritti autografi di <name ref="#EA"> Emanuele Artom </name></edition>
+                <respStmt>
+                    <resp>Conversione TEI P5 a cura di</resp>
+                    <name ref="#FB">Filippo Bellini</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Progetto condotta da</resp>
+                    <name ref="#AMDG">Angelo Mario Del Grosso</name>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Università di Pisa</publisher>
+                <pubPlace>Pisa</pubPlace>
+                <date when="2023">2023</date>
+                <availability><p>Opera ad accesso libero</p></availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <title level="m">Versione elettronica degli scritti autografi di <name ref="#EA">Emanuele Artom</name></title>
+                    <author ref="#EA">Emanuele Artom</author>
+                    <date when="2008">2008</date>
+                </bibl>
+                <msDesc>
+                    <msIdentifier>
+                        <country key="IT">Italia</country>
+                        <settlement type="city" ref="#MI">Milano</settlement>
+                        <institution ref="#CDEC"> Centro di Documentazione Ebraica Contemporanea </institution>
+                        <repository ref="http://digital-library.cdec.it/cdec-web/">Centro di Documentazione Ebraica Contemporanea</repository>
+                        <collection>Fondo Emanuele Artom</collection>
+                        <idno> ST0003-000006 </idno>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <author ref="#EA">Emanuele Artom</author>
+                            <title>Raccolta degli scritti autografi di <name ref="#EA">Emanuele Artom</name> redatti tra il 1943 e il 1944 accompagnati dalla lettera orginale della madre <name>Amalia</name></title>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>Fogli di <material>carta </material></support>
+                                <extent>
+                                    <measure quantity="174"> 174 pagine </measure>
+                                </extent>
+                                <condition>All'interno del fascicolo sono presenti alcune macchie, varie cancellature e alcuni strappi nelle estremità delle pagine.</condition>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <p>Ciascuna pagina contiene approssimativamente 22 righe. Tuttavia, il numero di righe può variare tra 25 e 29, a seconda della presenza di note e delle correzioni apportate negli spazi più vuoti</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc hands="2">
+                            <p>Il fascicolo è scritto da Emanuele Artom ad eccezione delle prime due pagine scritte dalla madre Segre Amalia.</p>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <p>Il fascicolo incluso nei diari pubblicati da <name>Guri Schwars</name> nel 
+                                <date when="2008">2008 </date>, spazia dal <date when="1943">1943</date> al 
+                                <date when="1944-02-23">23 febbraio 1944</date> e documenta l'esperienza 
+                                partigiana di <name>Emanuele Artom</name>.
+                            </p>
+                        </origin>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p> L'obiettivo del progetto è codificare gli scritti di <name>Emanuele Artom </name> nell'ambito dell'esame di codifica di testi.</p>
+            </projectDesc>
+            <editorialDecl>
+                <punctuation>
+                    <p>I segni di punteggiatura rispecchiano il documento originale.</p>
+                </punctuation>
+                <correction>
+                    <p>Gli errori riscontrati sono stati marcati con l'elemento <gi>sic</gi> e la corrispondente forma corretta è stata inserita di seguito all'interno dell'elemento <gi>corr</gi>.</p>
+                </correction>
+                <quotation>
+                    <p>Viene riportato il discorso di una donna, le virgolette nel documento originale vengono chiuse ma non aperte.</p>
+                </quotation>
+                <hyphenation>
+                    <p>La divisione in sillabe a fine frase è sempre stata mantenuta e corretta qualora ci fossero errori.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Il testo è stato diviso in periodi attraverso <gi>ab</gi>.</p>
+                </segmentation>
+                <stdVals>
+                    <p>L'attributo <att>when</att> nell'elemento <gi>date</gi>,se cotniene la data completa,è suddiviso in <val>AA-MM-GG</val>.</p>
+                </stdVals>
+                <interpretation>
+                    <p>I nomi di persona sono stati marcati con l'elemento <gi>name</gi></p>
+                    <p>Le date sono state marcate con l'elemento <gi>date</gi></p>
+                </interpretation>
+                <normalization method="silent">
+                    <p>L'autore tende a scrivere il puntino delle i spostato più a destra della i stessa.
+                    Considerando questo aspetto ricorrente, i segni sono stati normalizzati.
+                    </p>
+                </normalization>
+            </editorialDecl>
+            <charDecl> <!-- info glifi incontrati-->
+                <glyph xml:id="scribble">
+                    <localProp name="name" value="indefinito"/>
+                    <mapping type="Unicode"> 0x1d72a</mapping>
+                </glyph>
+                <glyph xml:id="parentesi">
+                    <localProp name="name" value="parentesi" />
+                    <mapping type="Unicode">0x1734</mapping>
+                </glyph>
+            </charDecl>
+            <refsDecl>
+                <p>I riferimenti sono stat identificati attraverso gli opportuni attributi<att>xml:id</att> e <att>ref</att>.</p>
+            </refsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="EA" role="author">
+                        <name>Emanuele Artom</name>
+                        <birth when="1915-06-23">23 Giugno 1915</birth>
+                        <death when="1944-04-07">7 Luglio 1944</death>
+                    </person>
+                    <person xml:id="AA" role="author">
+                        <name>Amalia Artom</name>
+                    </person>
+                    <person xml:id="GS" role="professor">
+                        <name>Guri Schwarz</name>
+                        <birth when="1975-03-02">2 Marzo 1975</birth>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <langUsage>
+                <language ident="ita">Italiano</language>
+                <language ident="pms">Piemontese</language>
+            </langUsage>
+            <textDesc>
+                <channel mode="w"></channel> <!-- canale-->
+                <constitution type="frags"></constitution> <!-- composizione interna di un testo:
+                fragmentato,completo,...-->
+                <derivation type="orginal"></derivation> <!-- descrive natura e l'originalità-->
+                <domain type="private"></domain><!-- descrive il contesto sociale-->
+                <factuality type="fact"></factuality> <!-- descrive la realisticità-->
+                <interaction type="none"></interaction><!-- descrive la cardinalità della natura(per
+                chi è)-->
+                <preparedness type="none"></preparedness> <!-- spontaneità-->
+                <purpose type="express"></purpose> <!-- scopo-->
+            </textDesc>
+            <settingDesc>
+                <p>La documentazione narrativa riguardante l'esperienza partigiana di <name>Emanuele Artom</name>, raccolta nei diari, è compresa in un periodo tra il <date when="1943">1943</date> e <date when="1944-02-23">23 febbraio 1944</date>.</p>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <facsimile>
+        <surface xml:id="pag96" n="1">
+            <graphic url='96.png' width='756.8px' height='1023.8px' />
+            <note>Pagina 96</note>
+            <zone xml:id="pag96_line1" ulx="457" uly="80" lrx="603" lry="133" />
+            <zone xml:id="pag96_line2" ulx="83" uly="120" lrx="654" lry="172" />
+            <zone xml:id="pag96_line3" ulx="83" uly="165" lrx="630" lry="226" />                
+            <zone xml:id="pag96_line4" ulx="81" uly="200" lrx="678" lry="256" />               
+            <zone xml:id="pag96_line5" ulx="81" uly="240" lrx="663" lry="287" />                
+            <zone xml:id="pag96_line6" ulx="81" uly="280" lrx="676" lry="335" />               
+            <zone xml:id="pag96_line7" ulx="79" uly="322" lrx="679" lry="376" />                
+            <zone xml:id="pag96_line8" ulx="83" uly="360" lrx="681" lry="399" />            
+            <zone xml:id="pag96_line9" ulx="81" uly="394" lrx="684" lry="453" />              
+            <zone xml:id="pag96_line10" ulx="84" uly="436" lrx="492" lry="492" />             
+            <zone xml:id="pag96_line11" ulx="73" uly="472" lrx="675" lry="532" />              
+            <zone xml:id="pag96_line12" ulx="76" uly="511" lrx="678" lry="572" />                
+            <zone xml:id="pag96_line13" ulx="76" uly="551" lrx="665" lry="607" />              
+            <zone xml:id="pag96_line14" ulx="87" uly="592" lrx="673" lry="645" />                
+            <zone xml:id="pag96_line15" ulx="83" uly="626" lrx="676" lry="696" />      
+            <zone xml:id="pag96_line16" ulx="86" uly="668" lrx="663" lry="725" />              
+            <zone xml:id="pag96_line17" ulx="86" uly="701" lrx="609" lry="760" />              
+            <zone xml:id="pag96_line18" ulx="92" uly="741" lrx="631" lry="796" />              
+            <zone xml:id="pag96_line19" ulx="89" uly="778" lrx="638" lry="831" />              
+            <zone xml:id="pag96_line20" ulx="87" uly="818" lrx="681" lry="882" />             
+            <zone xml:id="pag96_line21" ulx="91" uly="858" lrx="657" lry="909" />           
+            <zone xml:id="pag96_line22" ulx="94" uly="893" lrx="646" lry="949" />
+        </surface>
+        <surface xml:id="pag97" n="2">
+            <graphic url='97.png' width='755.8px' height='1023.8px' />
+            <note>Pagina 97</note>
+            <zone xml:id="pag97_line1" ulx="84" uly="92" lrx="662" lry="143" />             
+            <zone xml:id="pag97_line2" ulx="89" uly="124" lrx="662" lry="183" />
+            <zone xml:id="pag97_line3" ulx="89" uly="164" lrx="595" lry="216" />
+            <zone xml:id="pag97_line4" ulx="91" uly="196" lrx="713" lry="261" />
+            <zone xml:id="pag97_line5" ulx="89" uly="234" lrx="689" lry="301" />
+            <zone xml:id="pag97_line6" ulx="86" uly="280" lrx="675" lry="332" />
+            <zone xml:id="pag97_line7" ulx="91" uly="319" lrx="663" lry="372" />
+            <zone xml:id="pag97_line8" ulx="87" uly="364" lrx="684" lry="415" />
+            <zone xml:id="pag97_line9" ulx="83" uly="392" lrx="681" lry="453" />              
+            <zone xml:id="pag97_line10" ulx="76" uly="434" lrx="670" lry="493" />               
+            <zone xml:id="pag97_line11" ulx="83" uly="474" lrx="684" lry="527" />              
+            <zone xml:id="pag97_line12" ulx="87" uly="509" lrx="681" lry="567" />              
+            <zone xml:id="pag97_line13" ulx="87" uly="549" lrx="691" lry="612" />              
+            <zone xml:id="pag97_line14" ulx="92" uly="587" lrx="678" lry="649" />               
+            <zone xml:id="pag97_line15" ulx="86" uly="625" lrx="683" lry="680" />               
+            <zone xml:id="pag97_line16" ulx="86" uly="669" lrx="668" lry="721" />               
+            <zone xml:id="pag97_line17" ulx="87" uly="709" lrx="641" lry="760" />               
+            <zone xml:id="pag97_line18" ulx="86" uly="744" lrx="663" lry="800" />               
+            <zone xml:id="pag97_line19" ulx="89" uly="782" lrx="651" lry="840" />                
+            <zone xml:id="pag97_line20" ulx="97" uly="819" lrx="639" lry="872" />               
+            <zone xml:id="pag97_line21" ulx="97" uly="854" lrx="649" lry="912" />             
+            <zone xml:id="pag97_line22" ulx="89" uly="896" lrx="636" lry="957" />               
+        </surface>
+        <surface xml:id="pag100">
+            <graphic url='100.png' width='622.4px' height='1024.4px' />
+            <note>Pagina 100</note>
+            <zone xml:id="pag100_line1" ulx="35" uly="29" lrx="587" lry="56" />
+            <zone xml:id="pag100_line2" ulx="34" uly="57" lrx="550" lry="83" />
+            <zone xml:id="pag100_line3" ulx="33" uly="94" lrx="564" lry="111" />
+            <zone xml:id="pag100_line4" ulx="27" uly="121" lrx="588" lry="148" />
+            <zone xml:id="pag100_line5" ulx="24" uly="151" lrx="591" lry="184" />
+            <zone xml:id="pag100_line6" ulx="24" uly="178" lrx="567" lry="211" />
+            <zone xml:id="pag100_line7" ulx="18" uly="207" lrx="595" lry="236" />
+            <zone xml:id="pag100_line8" ulx="18" uly="239" lrx="573" lry="268" />
+            <zone xml:id="pag100_line9" ulx="21" uly="272" lrx="577" lry="296" />
+            <zone xml:id="pag100_line10" ulx="20" uly="308" lrx="569" lry="333" />
+            <zone xml:id="pag100_line11" ulx="25" uly="339" lrx="567" lry="377" />
+            <zone xml:id="pag100_line12" ulx="25" uly="379" lrx="571" lry="404" />
+            <zone xml:id="pag100_line13" ulx="33" uly="418" lrx="558" lry="438" />
+            <zone xml:id="pag100_line14" ulx="26" uly="444" lrx="573" lry="475" />
+            <zone xml:id="pag100_line15" ulx="27" uly="485" lrx="543" lry="512" />
+            <zone xml:id="pag100_line16" ulx="27" uly="512" lrx="578" lry="548" />
+            <zone xml:id="pag100_line17" ulx="20" uly="551" lrx="555" lry="576" />
+            <zone xml:id="pag100_line18" ulx="27" uly="582" lrx="557" lry="613" />
+            <zone xml:id="pag100_line19" ulx="27" uly="618" lrx="549" lry="642" />
+            <zone xml:id="pag100_line20" ulx="31" uly="656" lrx="592" lry="680" />
+            <zone xml:id="pag100_line21" ulx="18" uly="687" lrx="558" lry="711" />
+            <zone xml:id="pag100_line22" ulx="27" uly="722" lrx="567" lry="747" />
+            <zone xml:id="pag100_line23" ulx="37" uly="763" lrx="553" lry="790" />
+            <zone xml:id="pag100_line24" ulx="22" uly="807" lrx="573" lry="829" />
+            <zone xml:id="pag100_line25" ulx="19" uly="842" lrx="572" lry="863" />
+            <zone xml:id="pag100_line26" ulx="31" uly="873" lrx="575" lry="906" />
+            <zone xml:id="pag100_line27" ulx="30" uly="907" lrx="538" lry="939" />
+            <zone xml:id="pag100_line28" ulx="30" uly="944" lrx="544" lry="975" />
+            <zone xml:id="pag100_line29" ulx="32" uly="985" lrx="571" lry="1007" />
+        </surface>
+    </facsimile>
+
+    <text xml:lang="ita" xml:id="pag_96_97_100">
+        <body>
+            <div>
+                <pb n="96" facs="#pag96" xml:id="pb96"/>
+                <ab n="1">
+                    <lb xml:id="page_96_line_1" n="1" facs="#pag96_line1"/>
+                    <unclear reason="illegible" cert="low"> 
+                        <date when="-12-27">27 <abbr type="date">Dic</abbr>
+                        </date>
+                    </unclear>
+                    <lb xml:id="pag_96_line_2" n="2" facs="#pag96_line2"/>
+                    Stanotte dormii malissimo<pc>.</pc>
+                    Nella stalla
+                    <lb xml:id="pag_96_line_3" n="3" facs="#pag96_line3"/>
+                    nacque un vitellino e 
+                    <subst>
+                        <del>
+                            <gap reason="cancelled"></gap>
+                        </del>
+                        <add>ci</add>
+                    </subst>
+                    fu un certo
+                    <lb xml:id="pag_96_line_4" n="4" facs="#pag96_line4"/>
+                    fermento di quanti assistevano al lieto
+                    <lb xml:id="pag_96_line_5" n="5" facs="#pag96_line5"/>
+                    evento<pc>.</pc>
+                    Inoltre c’era una sola coperta e sic<pc type="syllabication" rend="light">=</pc>
+                    <lb xml:id="pag_96_line_6" n="6" facs="#pag96_line6"/>
+                    come <del rend="scribble"> faceva</del> non volevo dormire <del rend="overstrike">insieme</del>
+                    <lb xml:id="pag_96_line_7" n="7" facs="#pag96_line7"/>
+                    <del rend="overstrike">a Peru</del> affettuosamente avvinto a <persName>Peru</persName><pc>,</pc>
+                    <lb xml:id="pag_96_line_8" n="8" facs="#pag96_line8"/>
+                    la lasciai tutta a lui accontentandomi
+                    <lb xml:id="pag_96_line_9" n="9" facs="#pag96_line9"/>
+                    del soprabito<pc>.</pc>
+                    I contadini<pc>,</pc> buoni come
+                    <lb xml:id="pag_96_line_10" n="10" facs="#pag96_line10"/>
+                    sempre<pc>,</pc> affabili<pc>,</pc> ospitali.
+                    <lb xml:id="pag_96_line_11" n="11" facs="#pag96_line11"/>
+                    Oggi ripresi il mio lavoro sentendo
+                    <lb xml:id="pag_96_line_12" n="12" facs="#pag96_line12"/>
+                    anche più di ieri la mancanza di <persName><abbr type="First Name">G</abbr></persName><pc>.</pc>
+                    <lb xml:id="pag_96_line_13" n="13" facs="#pag96_line13"/>
+                    Andai in <num  type ="cardinal"  value =" 2 ">due</num> famiglie a portare dei
+                    <lb xml:id="pag_96_line_14" n="14" facs="#pag96_line14" break="no"/>
+                    sussidi cercando di lasciare tutti con<pc type="syllabication" rend="light">=</pc>
+                    <lb xml:id="pag_96_line_15" n="15" facs="#pag96_line15"/>
+                    tenti<pc>.</pc> 
+                    Il significato di questa assistenza
+                    <lb xml:id="pag_96_line_16" n="16" facs="#pag96_line16"/>
+                    non è solo umano<pc>,</pc> ma anche politico<pc>:</pc>
+                    <lb xml:id="pag_96_line_17" n="17" facs="#pag96_line17"/>
+                    guadagnarsi la popolazione<pc>.</pc>
+                    <del rend="overstrike">Peru</del>
+                    <lb xml:id="pag_96_line_18" n="18" facs="#pag96_line18"/>
+                    Una vecchia e bisbetica signorina
+                    <lb xml:id="pag_96_line_19" n="19" facs="#pag96_line19"/> 
+                    col coletto bianco sino al mento
+                    <lb xml:id="pag_96_line_20" n="20" facs="#pag96_line20"/>
+                    e la faccia di gatto arrabiato<pc>,</pc> mi in<pc type="syllabication" rend="light">=</pc>
+                    <lb xml:id="pag_96_line_21" n="21" facs="#pag96_line21"/>
+                    dicò una mamma decrepita dicendo<pc>:</pc>
+                    <lb xml:id="pag_96_line_22" n="22" facs="#pag96_line22"/>
+                    <q><add hand='#FB'>&lt;&lt;</add><del rend="overstrike"> chi </del>lei è la titolare<pc>,</pc> ma la padrona</q>
+                </ab>
+                <pb n="97"  facs="#pag97" xml:id="pb97"/>
+                <ab n="2">
+                    <lb xml:id="pag_97_line_1" n="23" facs="#pag97_line1"/>
+                    <q>sono io &gt;&gt;</q> e questa non si <choice><sic>mostro</sic><corr>mostrò</corr></choice>
+                    <lb xml:id="pag_97_line_2" n="24" facs="#pag97_line2"/>
+                    soddisfatta delle <measure type="currency">1000 lire</measure> che
+                    <lb xml:id="pag_97_line_3" n="25" facs="#pag97_line3"/>
+                    <del rend="overstrike">L'altra<pc>,</pc> che aveva </del> le diedi<pc>.</pc>
+                    <lb xml:id="pag_97_line_4" n="26" facs="#pag97_line4"/>
+                    Oggi andai in albergo a lavarmi
+                    <lb xml:id="pag_97_line_5" n="27" facs="#pag97_line5"/>
+                    con l'acqua calda<pc>,</pc> finalmente<pc>.</pc>
+                    <lb xml:id="pag_97_line_6" n="28" facs="#pag97_line6"/>
+                    Ero stanchissimo<pc>,</pc> avevo mal di
+                    <lb xml:id="pag_97_line_7" n="29" facs="#pag97_line7"/>
+                    capo<pc>,</pc> ed essendomi seduto <del rend="overstrike">per il</del>
+                    <lb xml:id="pag_97_line_8" n="30" facs="#pag97_line8"/>
+                    in un viottolo su di un tronco<pc>,</pc>
+                    <lb xml:id="pag_97_line_9" n="31" facs="#pag97_line9"/>
+                    dovetti far forza su di me e al<pc type="syllabication" rend="light">= </pc>
+                    <lb xml:id="pag_97_line_10" n="32" facs="#pag96_line10"/>
+                    zarmi<pc>,</pc> perchè mi stavo addor<pc type="syllabication" rend="light">=</pc>
+                    <lb xml:id="pag_97_line_11" n="33" facs="#pag97_line11"/>
+                    mentando<pc>;</pc> però dopo quel mezzo
+                    <lb xml:id="pag_97_line_12" n="34" facs="#pag97_line12"/>
+                    bagno mi sentii meglio<pc>.</pc> Scrissi una
+                    <lb xml:id="pag_97_line_13" n="35" facs="#pag97_line13"/>
+                    cartolina a casa e feci l'inchie<pc type="syllabication" rend="light"></pc>
+                    <lb xml:id="pag_97_line_14" n="36" facs="#pag97_line14"/>
+                    sta sui disordini avvenuti dalla
+                    <lb xml:id="pag_97_line_15" n="37" facs="#pag97_line15"/>
+                    tabaccaia<pc>.</pc>  Le dissi che il comando
+                    <lb xml:id="pag_97_line_16" n="38" facs="#pag97_line16"/>
+                    voleva che i nostri uomini fossero
+                    <lb xml:id="pag_97_line_17" n="39" facs="#pag97_line17"/>
+                    esemplari per correttezza e che
+                    <lb xml:id="pag_97_line_18" n="40" facs="#pag97_line18"/>
+                    avremmo punito con la massima se<pc type="syllabication" rend="light">=</pc>
+                    <lb xml:id="pag_97_line_19" n="41" facs="#pag97_line19"/>
+                    verità i colpevoli<pc>,</pc> ma essa non
+                    <lb xml:id="pag_97_line_20" n="42" facs="#pag97_line20"/>
+                    li seppe indicare<pc>.</pc> Disse solo<pc>:</pc> <g ref="#scribble"></g>
+                    <lb xml:id="pag_97_line_21" n="43" facs="#pag97_line21"/>
+                    <foreign xml:lang="pms"> <q>sai che è cummandant sun bra<pc type="syllabication" rend="light">=</pc></q>
+                    <lb xml:id="pag_97_line_22" n="44" facs="#pag97_line22"/>
+                    <q>va gent<pc>,</pc> ma a è navintena </q></foreign>
+                </ab>
+                <pb n="100"  facs="#pag100" xml:id="pb100"/>
+                <ab n="3">
+                    <lb xml:id="pag_100_line_1" n="45" facs="#pag100_line1"/>
+                    ma giriamo sempre tuttavia ovunque si
+                    <lb xml:id="pag_100_line_2" n="46" facs="#pag100_line2"/>
+                    sia necessari e pensavo che siamo 
+                    <lb xml:id="pag_100_line_3" n="47" facs="#pag100_line3"/>
+                    molto migliori degli altri<pc>,</pc> notte
+                    <lb xml:id="pag_100_line_4" n="48" facs="#pag100_line4"/>
+                    nella stalla<pc>;</pc> si 
+                    <choice>
+                        <sic>dormi</sic><corr>dormì</corr>
+                    </choice> bene<pc>,</pc> molto
+                    <lb xml:id="pag_100_line_5" n="49" facs="#pag100_line5"/>
+                    bene dopo quella gelida di 
+                    <choice>
+                        <sic>natale</sic><corr>Natale</corr>
+                    </choice><pc>.</pc>
+                    <lb xml:id="pag_100_line_6" n="50" facs="#pag100_line6"/>
+                    Dimenticavo di dire che <del rend="overstrike">dopo la</del>
+                    <lb xml:id="pag_100_line_7" n="51" facs="#pag100_line7"/>
+                    alla mattina di 
+                    <choice>
+                        <sic>natale</sic><corr>Natale</corr>
+                    </choice><pc>,</pc> quando 
+                    <lb xml:id="pag_100_line_8" n="52" facs="#pag100_line8"/>
+                    si scese dalla vacillante scala del
+                    <lb xml:id="pag_100_line_9" n="53" facs="#pag100_line9"/>
+                    fienile tutti rigidi per il freddo
+                    <lb xml:id="pag_100_line_10" n="54" facs="#pag100_line10"/>
+                    e la stanchezza del giorno prece<pc type="syllabication" rend="light">=</pc>
+                    <lb xml:id="pag_100_line_11" n="55" facs="#pag100_line11"/>
+                    dente<pc>,</pc> 
+                    <subst>
+                        <del rend="ovestrike">la</del>
+                        <add hand="EA" place="above"> una</add>
+                    </subst>
+                    contadina <subst><del><gap reason="cancelled"></gap></del><add>c</add></subst>he abitava
+                    <lb xml:id="pag_100_line_12" n="56" facs="#pag100_line12"/>
+                    vicino<pc>,</pc> prendendoci per 
+                    <num  type ="cardinal"  value =" 2 ">due</num> men<pc type="syllabication" rend="light">=</pc>
+                    <lb xml:id="pag_100_line_13" n="57" facs="#pag100_line13"/>
+                    dicanti<pc>,</pc> non volle lasciarci pa<pc type="syllabication" rend="light">=</pc>
+                    <lb xml:id="pag_100_line_14" n="58" facs="#pag100_line14"/>
+                    gare il pane e latte che ci diede<pc>.</pc>
+                    <lb xml:id="pag_100_line_15" n="59" facs="#pag100_line15"/>
+                    Dimenticavo pure la seconda 
+                    <lb xml:id="pag_100_line_16" n="60" facs="#pag100_line16"/>
+                    parte della storia del formaggio
+                    <lb xml:id="pag_100_line_17" n="61" facs="#pag100_line17"/>
+                    caduto nel pozzo nero e 
+                    <choice>
+                        <sic>cioe</sic><corr>cioè</corr>
+                    </choice> che
+                    <lb xml:id="pag_100_line_18" n="62" facs="#pag100_line18"/>
+                    il comand disse<pc>:</pc> <pc>'</pc>come sono stati
+                    <lb xml:id="pag_100_line_19" n="63" facs="#pag100_line19"/>
+                    gentili a toglierci la noia di 
+                    <lb xml:id="pag_100_line_20" n="64" facs="#pag100_line20"/>
+                    levare la crosta e tutti lo trovarono
+                    <lb xml:id="pag_100_line_21" n="65" facs="#pag100_line21"/>
+                    ottimo, e insistevano perchè <persName><abbr type="First Name">G</abbr></persName><c rend="faded"></c> e io 
+                    <lb xml:id="pag_100_line_22" n="66" facs="#pag100_line22"/>
+                    lo mangiassimo<pc>,</pc>ma noi sogghi<pc type="syllabication" rend="light">=</pc>
+                    <lb xml:id="pag_100_line_23" n="67" facs="#pag100_line23"/>
+                    gnavamo e dicevamo di non aver
+                    <lb xml:id="pag_100_line_24" n="68" facs="#pag100_line24"/>
+                    più fame<g ref="#parentesi"></g><pc>.</pc> Stamane <persName><abbr type="First Name">G</abbr></persName> parti<pc>;</pc> mi 
+                    <lb xml:id="pag_100_line_25" n="69" facs="#pag100_line25"/>
+                    rincrebbe e pensai a lui spesso du<pc type="syllabication" rend="light">=</pc>
+                    <lb xml:id="pag_100_line_26" n="70" facs="#pag100_line26"/>
+                    rante la giornata rammaricando
+                    <lb xml:id="pag_100_line_27" n="71" facs="#pag100_line27"/>
+                    che fosse lontano<pc>;</pc> specie ora<pc>,</pc> che è
+                    <lb xml:id="pag_100_line_28" n="72" facs="#pag100_line28"/>
+                    notte e dovrò andare a dormire 
+                    <lb xml:id="pag_100_line_29" n="73" facs="#pag100_line29"/>
+                    in un nuovo fienile con un <persName>Peru</persName>
+                </ab>
+            </div>
+        </body>
+    </text>
+</TEI>
