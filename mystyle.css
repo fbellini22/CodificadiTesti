@@ -1,0 +1,300 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Roboto, Verdana, sans-serif;
+  background-color: #fff7e6;
+}
+
+.intro {
+  background-color: rgb(180, 195, 215);
+  text-align: center;
+  border: 3px solid #952545;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  font-size: 1.2em;
+}
+
+#descrizione {
+  margin: 5px;
+  padding: 3%;
+  color: black;
+}
+#descrizione h2{
+  color: #952545;
+}
+.prima{
+  color:black;
+}
+#btn_mostra_info{
+  margin: 10px 10px 30px;
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #952545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+#btn_mostra_legenda {
+  margin: 10px 10px 30px;
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #952545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+#legenda {
+  width: 60%;
+  margin: auto;
+  padding: 10px;
+  border: 3px solid #952545;
+  border-radius: 15px;
+  background-color: rgb(180, 195, 215);
+  text-align: center;
+}
+
+
+#legenda h2 {
+  color: #952545;
+}
+
+
+.buttons-container {
+  text-align: center;
+}
+
+.moreinfo{
+  padding: 5%;
+  border: 3px solid #952545;
+  border-radius: 10%;
+  background-color: rgb(180, 195, 215);;
+}
+.moreinfo h2{
+  color: #952545;
+}
+
+h1, .note {
+  font-size: 180%;
+  text-align: center;
+  font-weight: bold;
+  padding: 2%;
+  color: #952545;
+  font-variant: small-caps;
+}
+
+h3 {
+  color: #952545;
+  font-size: 145%;
+}
+
+p,
+li {
+  color: black;
+  padding: 2px;
+  font-size: 20px;
+  font-family: initial;
+}
+li {
+  list-style-type: disc;
+}
+h2{
+  font-size: 145%;
+  color: #952545;
+  font-variant: small-caps;
+}
+
+
+.pp {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+.trascrizione {
+  border: 3px solid #952545;
+  padding: 28px;
+  border-radius: 10%;
+  background-color: rgb(180, 195, 215);
+}
+
+.pp > img, .pp > div.trascrizione {
+	margin: 5rem;
+}
+
+.diari_pag {
+  flex-direction: column;
+  text-align: center;
+  font-size: 30px;
+}
+
+.fonte {
+  background-color: rgb(180, 195, 215);
+  height: 40%;
+  border: 3px solid #952545;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background:  rgb(180, 195, 215);
+}
+
+#p_footer {
+  font-weight: bold;
+  font-size: 150%;
+}
+  
+.q {
+  font-style: italic;
+  color: #2c2595;
+}
+
+.q::after {
+  content: " =citazione";
+  display: none;
+  color: #952545;
+}
+
+.q:hover::after {
+  display: inline;
+}
+
+.add {
+  font-weight: bold;
+  font-style: oblique;
+  }
+
+.add::after {
+  content: " = Aggiunta";
+  display: none;
+  color: #952545;
+}
+
+.add:hover::after {
+  display: inline;
+}
+.supplied {
+  font-weight: bold;
+  font-style: oblique;
+  }
+
+.supplied::after {
+  content: " = Aggiunta";
+  display: none;
+  color: #952545;
+}
+
+.supplied:hover::after {
+  display: inline;
+}
+.syllabication::after {
+  display: none;
+  color: #952545;
+}
+
+.syllabication:hover::after {
+  display: inline;
+}
+.unclear{
+  color: black;
+  font-weight: bold;
+}
+.unclear::after {
+  content: " = Parola non chiara";
+  display: none;
+  color: #952545;
+}
+.unclear:hover::after{
+  display: inline;
+}
+.corr {
+  color: #952545;
+}
+
+.corr::after {
+  content: " = Correzione";
+  display: none;
+  color: black;
+}
+
+.corr:hover::after {
+  display: inline;
+}
+.num,.cardinal {
+  color: yellow;
+}
+
+.num::after {
+  content: attr(data-value);
+  display: none;
+  color: #952545;
+}
+
+.num:hover::after {
+  display: inline;
+}
+
+
+.name {
+  background-color: rgb(244, 248, 11);
+}
+
+.name::after {
+  content: " = Nome di persona";
+  display: none;
+  color: #952545;
+}
+
+.name:hover::after {
+  display: inline;
+}
+
+
+
+
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .intro {
+    font-size: 1em;
+  }
+
+  .moreinfo {
+    padding: 2%;
+  }
+
+  .diari_pag {
+    font-size: 18px;
+  }
+
+  .img_pag {
+    max-width: 100%;
+  }
+
+  .fonte {
+    padding: 2%;
+  }
+
+  #p_footer {
+    font-size: 100%;
+  }
+}
